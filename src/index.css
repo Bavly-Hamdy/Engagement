@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #fcf9f5;
+  --color-brand-primary: #3d332d;
+  --color-brand-secondary: #8c7e74;
+  --color-brand-accent: #c49b7a;
+  --color-brand-border: #d4c5b9;
+  --color-brand-faint: #f3ede6;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-arabic: "Amiri", serif;
+}
+
+body {
+  @apply bg-brand-bg text-brand-primary font-serif antialiased overflow-x-hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-secondary); 
+}
