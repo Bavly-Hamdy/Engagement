@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 
 import Sparkles from "./Sparkles";
+import ringsBg from "../assets/rings.png";
 
 interface CoverProps {
   onOpen: () => void;
@@ -25,12 +26,10 @@ const cornerVariants = {
 };
 
 export default function Cover({ onOpen }: CoverProps) {
-  const baseUrl = import.meta.env.BASE_URL;
-
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden font-serif bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `linear-gradient(rgba(252, 249, 245, 0.60), rgba(252, 249, 245, 0.60)), url('${baseUrl}rings.png')` }}
+      style={{ backgroundImage: `linear-gradient(rgba(252, 249, 245, 0.60), rgba(252, 249, 245, 0.60)), url('${ringsBg}')` }}
       exit={{ y: "-100%", opacity: 0, transition: { duration: 1, ease: "easeInOut" } }}
     >
       <motion.div variants={cornerVariants} initial="hidden" animate="visible" className="absolute top-0 right-0 w-64 h-64 border-r-[3px] border-t-[3px] border-brand-border m-8 z-10 origin-top-right"></motion.div>
