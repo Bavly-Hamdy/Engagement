@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node node_modules/vite/bin/vite.js --port=3000 --host=0.0.0.0",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node node_modules/gh-pages/bin/gh-pages.js -d dist",
     "build": "node node_modules/vite/bin/vite.js build",
     "preview": "node node_modules/vite/bin/vite.js preview",
     "clean": "rm -rf dist server.js",
