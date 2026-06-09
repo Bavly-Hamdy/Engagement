@@ -32,14 +32,16 @@ export default function App() {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <main 
       className="relative min-h-screen font-serif text-brand-primary selection:bg-brand-accent selection:text-brand-bg bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: "linear-gradient(rgba(252, 249, 245, 0.60), rgba(252, 249, 245, 0.60)), url('/rings.png')" }}
+      style={{ backgroundImage: `linear-gradient(rgba(252, 249, 245, 0.60), rgba(252, 249, 245, 0.60)), url('${baseUrl}rings.png')` }}
     >
       <audio ref={audioRef} loop>
-        <source src="/el-leil-we-samah.mpeg" type="audio/mpeg" />
-        <source src="/الليل وسماه.mpeg" type="audio/mpeg" />
+        <source src={`${baseUrl}el-leil-we-samah.mpeg`} type="audio/mpeg" />
+        <source src={`${baseUrl}الليل وسماه.mpeg`} type="audio/mpeg" />
       </audio>
       
       <AnimatePresence>
