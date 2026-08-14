@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C59E" />
+      <stop offset="50%" stop-color="#C49B7A" />
+      <stop offset="100%" stop-color="#8C6239" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#FCF9F5" stroke="#D4C5B9" stroke-width="2" />
+  
+  <!-- Left Ring -->
+  <ellipse cx="42" cy="54" rx="20" ry="24" fill="none" stroke="url(#gold)" stroke-width="6" transform="rotate(-15 42 54)" />
+  
+  <!-- Right Ring -->
+  <ellipse cx="58" cy="54" rx="20" ry="24" fill="none" stroke="url(#gold)" stroke-width="6" transform="rotate(15 58 54)" />
+  
+  <!-- Diamond / Sparkle on Top -->
+  <polygon points="50,18 56,26 50,34 44,26" fill="#E5C59E" stroke="#C49B7A" stroke-width="1.5" />
+  <circle cx="50" cy="26" r="3" fill="#FFFFFF" />
+  
+  <!-- Little Sparkle -->
+  <path d="M 50 12 Q 50 18 54 18 Q 50 18 50 24 Q 50 18 46 18 Q 50 18 50 12" fill="#C49B7A" />
+</svg>
