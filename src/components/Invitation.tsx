@@ -54,12 +54,6 @@ export default function Invitation() {
           <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-white/60 backdrop-blur-xs border border-brand-border/40 text-brand-accent text-xs font-bold tracking-widest uppercase">
             بسم الله الرحمن الرحيم
           </div>
-          <p className="font-arabic text-lg sm:text-2xl md:text-3xl text-brand-primary leading-relaxed sm:leading-loose font-bold">
-            "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
-          </p>
-          <p className="font-arabic text-xs sm:text-sm text-brand-secondary mt-5 tracking-[0.15em] font-bold">
-            — صدق الله العظيم —
-          </p>
         </motion.div>
 
         {/* Names Section */}
@@ -75,7 +69,7 @@ export default function Invitation() {
           </span>
 
           <h2 className="font-arabic text-base sm:text-xl text-brand-primary font-extrabold tracking-[0.2em] mb-8 sm:mb-12 uppercase" dir="rtl">
-            نتشرف بدعوتكم لحضور حفل خطوبتنا
+            Inviting you to celebrate our new beginning
           </h2>
           
           <div className="relative inline-block w-full max-w-lg mt-2 sm:mt-6">
@@ -104,18 +98,13 @@ export default function Invitation() {
             Save The Date
           </div>
 
-          {/* Arabic Date */}
-          <h3 className="font-arabic text-2xl sm:text-4xl font-bold text-brand-primary mb-2">
-            الجمعة، ٢٥ سبتمبر ٢٠٢٦
-          </h3>
-
           {/* English Date with strict LTR isolation */}
           <p 
             dir="ltr" 
             style={{ direction: "ltr", unicodeBidi: "isolate" }}
             className="text-lg sm:text-2xl font-serif italic text-brand-accent font-semibold mb-8 sm:mb-12"
           >
-            Friday, September 25, 2026
+            Sunday, November 15, 2026
           </p>
           
           <Countdown />
