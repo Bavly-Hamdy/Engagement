@@ -81,13 +81,13 @@ export default function Invitation() {
           <div className="relative inline-block w-full max-w-lg mt-2 sm:mt-6">
             <Sparkles count={18} />
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none text-brand-primary z-10 block relative tracking-tight">
-              Rashad
+              Ameena
             </h1>
             <span className="text-3xl sm:text-5xl font-serif italic font-normal text-brand-accent block my-3 sm:my-6 relative z-10">
               &amp;
             </span>
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none text-brand-primary z-10 block relative tracking-tight">
-              Esraa
+              Narmidhil
             </h1>
           </div>
         </motion.div>
