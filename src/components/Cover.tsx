@@ -74,11 +74,11 @@ export default function Cover({ onOpen }: CoverProps) {
           <motion.div variants={itemVariants} className="relative z-10 w-full py-2">
             <Sparkles count={15} />
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-[1.08] text-brand-primary relative z-10 tracking-tight">
-              Rashad
+              Ameena
               <span className="text-3xl sm:text-5xl font-serif italic font-normal text-brand-accent block my-2 sm:my-3">
                 &
               </span>
-              Esraa
+              Narmidhil
             </h1>
           </motion.div>
 
